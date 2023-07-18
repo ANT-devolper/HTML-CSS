@@ -1,0 +1,18 @@
+@font-face {
+    font-family:'Girl';
+    src: url('Pretty Girl.otf') format('opentype'), url('Pretty Girl.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+    
+    /*tipos de format()
+    -opentype(otf)
+    -truetype(ttf)
+    */
+}
+body{
+    font-family: 'Girl';
+}
+p{
+    font-size: 1.3em;
+}

@@ -1,0 +1,136 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Droid;
+    src: url(fontes/idroid.otf);
+}
+:root{
+    --cor0: #ebe5c5;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-android: 'Droid'
+}
+
+body{
+    font-family:var(--fonte-padrao);
+    margin: 0px;
+    background-color: var(--cor0);
+}
+p{
+    margin: 15px 0px;
+}
+header{
+    color: #fff;
+    background-image: linear-gradient(180deg, #18be18, #035803);
+    margin: 0px;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+}
+header > p{
+    text-align: center;
+}
+nav{
+    padding-top: 10px;
+    margin: 0px;
+}
+ul{
+    padding: 0px;
+}
+nav > ul > li{
+    display: inline;
+    padding: 5px;
+}
+nav > ul > li:hover{
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav > ul > li > a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+main{
+    background-color: #fff;
+    margin: 0px 35px;
+    padding: 10px;
+    border-radius: 0px 0px 20px 20px;
+}
+strong{
+    color: var(--cor5);
+}
+.link{
+    color: #1c661c;
+    text-decoration: none;
+    font-weight: bold;
+    background-image: linear-gradient(90deg, var(--cor2), #00800031);
+}
+.link:hover{
+    text-decoration: underline;
+}
+.link::after{
+    content: '[link]';
+    font-size: 0.7em;
+}
+
+h2{
+    font-family:Droid;
+    color: var(--cor5);
+}
+h3{
+
+    font-family: Droid;
+    background-image: linear-gradient(90deg, #63f063, #00800000);
+    color: #175317;
+}
+main > section > picture > img {
+    text-align: center;
+}
+picture{
+    display: block;
+    text-align: center;
+}
+section{
+    margin: 0px 5px;
+}
+section#extra{
+    border-radius: 20px;
+}
+#extra > article{
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+}
+#extra > h4{
+    color: #fff;
+    background-color: #1c661c;
+    padding: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px 10px 0px 0px ;
+}
+#extra > article > p{
+    margin-top: 0px;
+}
+#extra > article{
+    background-color: #6cce6c;
+    margin-top: 0px;
+}
+#extra > article > ul > li{
+    display: inline-block;
+}
+footer{
+    background-color: #035803;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+footer > p{
+    margin: 0px;
+}
