@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela grande</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid #000;
+            width: 300px;
+            padding: 10px;
+        }
+        thead{
+            background-color: gray;
+            color: #fff;
+        }
+        .estado{
+            text-decoration: none;
+        }
+        .estado:hover{
+            text-decoration: underline;
+        }
+        .posicao{
+            text-align: center;
+        }
+        .populacao{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE  
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+     -->
+
+     <table>
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Estado</th>
+                <th>População (2022)</th>
+                <th>População (2010)</th>
+                <th>% da Pop. total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="posicao">1</td>
+                <td><a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo_(estado)" target="_blank" class="estado">São Paulo</a></td>
+                <td class="populacao">44 420 459</td>
+                <td class="populacao">41 262 199</td>
+                <td>22,2%</td>
+            </tr>
+            <tr>
+                <td class="posicao">2</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Minas_Gerais" target="_blank" class="estado">Minas Gerais</a></td>
+                <td class="populacao">20 538 718</td>
+                <td class="populacao">19 597 330</td>
+                <td>10,0%</td>
+            </tr>
+            <tr>
+                <td class="posicao">3</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro_(estado)" target="_blank" class="estado">Rio de Janeiro</a></td>
+                <td class="populacao">16 054 524</td>
+                <td class="populacao">15 989 929</td>
+                <td>8,0%</td>
+            </tr>
+            <tr>
+                <td class="posicao">4</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Bahia" class="estado">Bahia</a></td>
+                <td class="populacao">14 136 417</td>
+                <td class="populacao">14 016 906</td>
+                <td>7,1%</td>
+            </tr>
+            <tr>
+                <td class="posicao">5</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Paran%C3%A1" target="_blank" class="estado">Paraná</a></td>
+                <td class="populacao">11 443 208</td>
+                <td class="populacao">10 444 526</td>
+                <td>5,7%</td>
+            </tr>
+            <tr>
+                <td class="posicao"> 6</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul" target="_blank" class="estado">Rio Grande do Sul</a></td>
+                <td class="populacao">10 880 506</td>
+                <td class="populacao">10 693 929</td>
+                <td>5,3%</td>
+            </tr>
+
+        </tbody>
+     </table>
+</body>
+</html>
