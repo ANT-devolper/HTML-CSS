@@ -10,15 +10,31 @@
         }
         table{
             border-collapse: collapse;
+            height: 1500px;
+        }
+        caption{
+            font-variant: small-caps;
+            font-weight: bolder;
+            font-size: 1.5em;
+            margin-bottom: 10px;
         }
         th, td{
             border: 1px solid #000;
             width: 300px;
             padding: 10px;
         }
-        thead{
-            background-color: gray;
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #808080;
+        }
+        thead, tfoot{
+            background-color: #808080;
             color: #fff;
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightgrey;
+            font-weight: bold;
         }
         .estado{
             text-decoration: none;
@@ -35,9 +51,17 @@
         .porcentagem{
             text-align: center;
         }
+        p#obs{
+            font-size: 0.8em;
+        }
+        p{
+            font-size: 2em;
+        }
+
     </style>
 </head>
 <body>
+    <h1>Uso de tabelas grandes</h1>
     <!-- 
         ANATOMIA PARA TABELAS GRANDES
         TABLE  
@@ -50,13 +74,14 @@
      -->
 
      <table>
+        <caption>Tabela de População Por Estado</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População (2022)</th>
-                <th>População (2010)</th>
-                <th>% da Pop. total</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População (2022)</th>
+                <th scope="col">População (2010)</th>
+                <th scope="col" style="width: 50px;">% da Pop. total</th>
             </tr>
         </thead>
         <tbody>
@@ -97,13 +122,56 @@
             </tr>
             <tr>
                 <td class="posicao"> 6</td>
-                <td><a href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul" target="_blank" class="estado">Rio Grande do Sul</a></td>
+                <td><a href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul" target="_blank"  class="estado">Rio Grande do Sul</a></td>
                 <td class="populacao">10 880 506</td>
                 <td class="populacao">10 693 929</td>
                 <td class="porcentagem">5,3%</td>
             </tr>
-
+             <tr>
+                <td class="posicao">7</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Pernambuco" target="_blank" class="estado">Pernambuco</a></td>
+                <td class="populacao">9 058 155</td>
+                <td class="populacao">8 796 448</td>
+                <td class="porcentagem">4,4%</td>
+            </tr>
+             <tr>
+                <td class="posicao">8</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Cear%C3%A1" target="_blank" class="estado">Ceará</a></td>
+                <td class="populacao">8 791 688</td>
+                <td class="populacao">8 452 381</td>
+                <td class="porcentagem">4,3%</td>
+            </tr>
+             <tr>
+                <td class="posicao">9</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Par%C3%A1" target="_blank" class="estado">Pará</a></td>
+                <td class="populacao">8 116 132</td>
+                <td class="populacao">7 581 051</td>
+                <td class="porcentagem">4,1%</td>
+            </tr>
+             <tr>
+                <td class="posicao">10</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Santa_Catarina" target="_blank" class="estado">Santa Catarina</a></td>
+                <td class="populacao">7 609 601</td>
+                <td class="populacao">6 248 436</td>
+                <td class="porcentagem">3,7%</td>
+            </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th>total</th>
+                <td></td>
+                <td class="populacao">117 473 832</td>
+                <td class="populacao">112 004 819</td>
+                <td class="porcentagem">58,3%</td>
+            </tr>
+        </tfoot>
      </table>
+     <div>
+        <p id="obs">esta tabela esta tabela esta incompleta</p>
+     </div>
+     <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sed fuga aliquam eveniet adipisci, eius, ducimus et nostrum excepturi explicabo officia rem consequuntur modi deserunt totam doloribus veniam dignissimos voluptates, earum voluptas quibusdam culpa perspiciatis! Harum consectetur nihil velit adipisci assumenda laudantium suscipit nulla ducimus dicta facere? Ipsum maiores non quis nihil voluptatem obcaecati adipisci ullam tenetur, commodi beatae repellat eum eligendi sapiente est accusamus perspiciatis saepe iste illo cum quaerat? Modi harum voluptatum quam. Fugiat recusandae necessitatibus quasi placeat consequatur harum aliquam neque ex esse, aspernatur aliquid culpa eaque possimus doloribus sequi magnam veniam voluptate ducimus. Nostrum maiores autem velit tempora placeat suscipit reprehenderit praesentium similique cum corrupti vero illo dolorum nesciunt in cupiditate id optio nulla fugiat, sit officiis consequuntur! Vel, qui. Qui nisi doloremque laborum eius odio nobis voluptas explicabo voluptates quo? Non quis ex fuga odit nisi necessitatibus ad accusamus corrupti expedita, illo quidem, amet id dignissimos odio. Aspernatur inventore velit itaque et commodi vel nihil totam distinctio ullam iure vero illo nobis dolorum at id, explicabo aliquam placeat mollitia quos! Quis atque voluptatum repudiandae velit itaque suscipit praesentium accusamus fugit hic sapiente, inventore natus assumenda consequuntur culpa eligendi reiciendis distinctio odit architecto! Libero, veritatis ea! Dicta maxime tenetur autem fuga optio voluptates quia modi? Minus, possimus porro delectus, suscipit quia nam obcaecati at corrupti nostrum totam accusantium molestiae, labore voluptatum eos exercitationem aperiam architecto soluta natus error adipisci quidem amet iusto perferendis. Nam a, sequi inventore cum ab hic ea quas voluptatum necessitatibus aliquam nobis veniam maxime magni non minima aperiam quam sunt id omnis commodi cupiditate. Similique vel in vitae labore repellendus! Esse itaque minima quidem. Veniam, dolorum. Quo maxime sint sed accusantium aut laboriosam provident magnam esse fugit? Facere vitae sapiente eaque ducimus deleniti voluptatibus quis! Tempora repellendus eaque veniam commodi maxime ea voluptas. Ducimus tenetur modi architecto illo perspiciatis adipisci pariatur nihil similique inventore, natus deleniti fugit excepturi. Distinctio, molestiae. Sapiente reiciendis ratione mollitia, veniam, in hic est libero, placeat quaerat cumque veritatis perspiciatis? Cupiditate dolor vero voluptatum nam, aliquam porro iste blanditiis laudantium praesentium, eveniet numquam quidem omnis iusto, sequi maiores? Recusandae, consectetur dolor eligendi ut, incidunt quisquam quis amet iste quas sunt suscipit minima pariatur ipsa saepe illo mollitia molestiae? Perferendis hic, possimus mollitia illo soluta voluptatum repellendus et. Suscipit quam tempora accusamus recusandae labore non doloribus ea distinctio, repudiandae vel quasi, exercitationem sequi, nostrum atque ut dignissimos itaque aspernatur tenetur. Maiores nobis iste magni a asperiores, provident veritatis facere quia? Odio quaerat neque dolore similique, minima doloribus architecto perspiciatis iusto doloremque ullam voluptates, voluptatum impedit quia obcaecati incidunt maiores ipsa iure corporis saepe! Odit doloribus temporibus maxime atque consequuntur, quas deleniti voluptatem mollitia aliquid nam veniam, tempore quibusdam odio quasi aspernatur laboriosam unde! Labore dolorem debitis cum voluptate explicabo excepturi provident illum impedit ut nihil? Cumque, adipisci similique. Nemo aspernatur, dicta molestiae consequatur ex inventore officia nulla iste deleniti, facilis expedita cumque magnam nihil laudantium voluptates cupiditate ipsa vitae repellendus, quo amet quod. Dicta iusto blanditiis vitae possimus aperiam?</p>
+
+     </div>
 </body>
 </html>
