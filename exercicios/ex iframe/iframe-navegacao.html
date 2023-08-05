@@ -4,17 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navegação iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe{
+            width: 90vw;
+            height: 500px;
+        }
+    </style>
 </head>
 <body>
     <h1>Faça uma escolha</h1>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae in libero et id! Facilis debitis accusantium tempora repudiandae, non quia provident adipisci voluptate rerum hic ex odio corporis tenetur sunt?</p>
     <ul>
-        <li><a href="#">Primeira pagiana</a></li>
-        <li><a href="#">Sengunda Pagina</a></li>
-        <li><a href="#">Terceira Pagina</a></li>
+        <li><a href="pag001.html" target="frame">Primeira pagiana</a></li>
+        <li><a href="pag002.html" target="frame">Sengunda Pagina</a></li>
+        <li><a href="pag003.html" target="frame">Terceira Pagina</a></li>
+
+        <iframe name="frame"srcdoc="<h1>Titulo</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, necessitatibus consectetur laboriosam dolore suscipit illum nobis ipsum aliquid provident sed minima quis aliquam ducimus officia, eum cumque dolor quam. Voluptatem!</p>"></iframe>
 
     </ul>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi necessitatibus illo facere inventore in dignissimos id ut sint voluptate ipsa maiores quaerat natus reiciendis exercitationem consequuntur totam quod delectus provident officiis voluptatum, magni perspiciatis. Iure odit eaque excepturi quas enim distinctio quasi totam atque quo cupiditate ullam ipsum similique, sit corporis id hic deserunt. Perspiciatis suscipit dignissimos molestiae animi quibusdam praesentium rem et iusto architecto? Quaerat ullam dignissimos quisquam, nemo animi necessitatibus, sunt ad nam earum, consequuntur molestias officiis itaque? Commodi at beatae optio dolorum eaque, dignissimos ducimus repudiandae debitis. Labore et quo ipsa natus quae in unde. Doloribus, minus?</p>
-    <p>lorem</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet iusto praesentium debitis, rerum, reiciendis exercitationem incidunt est numquam aliquid hic ullam iste cupiditate facilis cum eum qui ea similique soluta!</p>
 </body>
 </html>
