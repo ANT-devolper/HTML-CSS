@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-check</title>
+</head>
+<body>
+    <form action="cadastro.php" autocomplete="on" method="get">
+        <fieldset>
+            <legend>sexo</legend>
+            <input type="radio" name="sx" checked id="isxmas"> <label for="isxmas" checked>Masculino</label>
+            <input type="radio" name="sx" id="isxfem"> <label for="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="ebas" checked id="iebas"><label for="iebas" checked >Basquete</label> <br>
+            <input type="checkbox" name="efut" id="iefut"> <label for="iefut" checked>Futebol</label> <br>
+            <input type="checkbox" name="enat" id="ienat"> <label for="ienat">Natação</label> <br>
+            <input type="checkbox" name="eten" id="ieten"> <label for="ieten">Tenis</label> <br>
+            <input type="checkbox" name="evol" id="ievol"> <label for="ievol" >Volei</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
